@@ -1,0 +1,70 @@
+<html>
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Frames</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  body{
+    text-align: center;
+    background-image: url("Back.jpg");
+    background-size: cover;
+  }
+  h3
+  {
+    font-size: 25px !important;
+    width: 100%;
+  }
+  canvas {
+  	border:1px solid black;
+  }
+  .div {
+  position: relative;
+  animation-name: example;
+  animation-duration: 30s;
+}
+
+@keyframes example {
+  0%   {background-color:black; left:0px; top:0px;}
+  0%   {border-color:black; left:0px; top:0px;}
+  10%  {background-color:violet; left:400px; top:0px;}
+  10%  {border-color:violet; left:400px; top:0px;}
+  20%  {background-color:indigo; left:400px; top:400px;}
+  20%  {border-color:indigo; left:400px; top:400px;}
+  30% {background-color:blue; left:400px; top:0px;}
+  30% {border-color:blue; left:400px; top:0px;}
+  40%  {background-color:green; left:-400px; top:0px;}
+  40%  {border-color:green; left:-400px; top:0px;}
+  50%  {background-color:yellow; left:-400px; top:400px;}
+  50%  {border-color:yellow; left:-400px; top:400px;}
+  60%  {background-color:orange; left:-400px; top:0px;}
+  60%  {background-color:orange; left:-400px; top:0px;}
+  70%  {background-color:red; left:0px; top:0px;}
+  70%  {border-color:red; left:0px; top:0px;}  
+}
+  </style>
+</head>
+
+<body>
+<div class="container">
+	<h3 class="btn btn-danger" style="border: 2px solid black;"><div class="btn btn-danger  div" style="font-size: 20px;">Frame8</div></h3>
+	<hr>
+  <label>Type A Name To Save : </label>
+  <input id="name" placeholder="Type Any Name To Save">
+  <br>
+  <button onclick="take_snapshot()" class="btn btn-primary">Take Snapshot</button>
+  <button onclick="Home()" class="btn btn-success">Home</button>
+</div>
+
+<script src="main8.js"></script>
+</body>
+
+</html>
+
+  
